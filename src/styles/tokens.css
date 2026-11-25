@@ -1,0 +1,46 @@
+/* Design tokens: cores, espaçamentos, fontes e tamanhos vivem aqui, num só lugar */
+:root {
+  /* cores: papel milimetrado, tinta marinho e marca-texto */
+  --papel: #e7efed;
+  --folha: #ffffff;
+  --tinta: #0d2b45;
+  --tinta-suave: #3c566c;
+  --cianotipo: #1a5fa8;
+  --marca: #ffd23f;
+  --giz: #e0457b;
+  --certo: #1f8a5b;
+  --linha: rgba(13, 43, 69, 0.09);
+
+  /* espaçamentos */
+  --esp-1: 0.25rem;
+  --esp-2: 0.5rem;
+  --esp-3: 0.75rem;
+  --esp-4: 1rem;
+  --esp-6: 1.5rem;
+  --esp-8: 2rem;
+  --esp-12: 3rem;
+
+  /* fontes */
+  --fonte-texto: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --fonte-titulo: "Bahnschrift", "DIN Alternate", "Franklin Gothic Medium", "Arial Narrow", "Segoe UI", sans-serif;
+  --fonte-codigo: ui-monospace, "Cascadia Code", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* escala tipográfica (mobile) */
+  --fs-0: 0.875rem;
+  --fs-1: 1rem;
+  --fs-2: 1.25rem;
+  --fs-3: 1.5rem;
+  --fs-4: 2rem;
+
+  --borda: 2px solid var(--tinta);
+  --sombra: 0.25rem 0.25rem 0 var(--marca);
+}
+
+/* escala maior a partir de 48rem (768px): só redefinimos os tokens */
+@media (min-width: 48rem) {
+  :root {
+    --fs-2: 1.375rem;
+    --fs-3: 1.875rem;
+    --fs-4: 2.75rem;
+  }
+}
